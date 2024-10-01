@@ -1,1 +1,11 @@
-<p>home works!</p>
+
+<div *ngIf="showBanner" class="banner"> <!-- condição-->
+    <h1>Promoção Especial - Chinelos Crocs dos seus personagens favoritos!</h1>
+    <p>Aproveite descontos imperdíveis hoje!</p>
+  </div>
+
+  <button (click)="toggleBanner()">
+    {{ showBanner ? 'Ocultar Banner' : 'Exibir Banner' }}
+  </button>
+  
+  

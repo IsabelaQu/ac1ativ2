@@ -1,0 +1,38 @@
+.container {
+    margin: 20px auto;
+    max-width: 600px;
+  }
+  
+  .product-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .buy-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #13161E;
+    color: white;
+    transition: background-color 0.3s;
+  }
+  
+  .buy-btn:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+  }
+  
+  /* Diretiva não estrutural usando ngClass */
+  .out-of-stock {
+    background-color: grey;
+    cursor: not-allowed;
+  }
+  
+  .buy-btn:hover:not(:disabled) {
+    background-color: #161B26;
+  }
+  

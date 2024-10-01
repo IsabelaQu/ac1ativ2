@@ -1,1 +1,23 @@
-<p>produtos works!</p>
+<div class="container">
+    <h1>Lista de Produtos</h1>
+  
+    <!-- Exibe uma mensagem se não houver produtos disponíveis -->
+    <p *ngIf="products.length === 0">Nenhum produto disponível no momento.</p>
+  
+    <!-- Itera sobre os produtos com *ngFor -->
+    <div *ngFor="let product of products" class="product-card">
+      <h2>{{ product.name }}</h2>
+      <p>{{ product.description }}</p>
+      <p>Preço: R$ {{ product.price | number: '1.2-2' }}</p>
+  
+      <!-- O botão muda de cor e texto com base no estoque -->
+      <button
+        [ngClass]="{ 'out-of-stock': !product.inStock }"
+        [disabled]="!product.inStock"
+        class="buy-btn"
+      >
+        {{ product.inStock ? 'Comprar' : 'Fora de Estoque' }}
+      </button>
+    </div>
+  </div>
+  

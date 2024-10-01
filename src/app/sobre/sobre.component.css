@@ -1,0 +1,58 @@
+.about-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .banner {
+    background-color: #13161E;
+    color: white;
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  
+  .banner h1 {
+    font-size: 2.5em;
+  }
+  
+  .banner p {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+  
+  .content {
+    font-size: 1.1em;
+    margin: 20px 0;
+  }
+  
+  hr {
+    margin: 40px 0;
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+  }
+  
+  .social-media {
+    margin-bottom: 20px;
+  }
+  
+  .social-media h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+  
+  .icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .icons i {
+    font-size: 40px;
+    color: #13161E;
+  }
+  
+  .icons i:hover {
+    color: #161B26;
+  }
+  

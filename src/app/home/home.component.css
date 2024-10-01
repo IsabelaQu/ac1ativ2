@@ -1,0 +1,23 @@
+
+
+.banner {
+    background-color: #ffdd57;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    background-color: #13161E;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #161B26;
+  }
+  
